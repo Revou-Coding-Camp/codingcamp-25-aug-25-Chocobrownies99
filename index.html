@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS External-->
+     <link rel="stylesheet" href="css/style.css">
+     <!--Tailwind css-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Header Content -->
+    <header class="main-header" py-[8px] px-[4px]>
+        <!--Icon-->
+        <div class="logo"></div> 
+        <!-- Navbar-->
+         <nav class="flex">
+            <a href="home-page" class="border p-[4px]">Home</a>
+            <a href="our-profile" class="border p-[4px]">Our Profile</a>
+            <a href="portofolio" class="border p-[4px]">Portofolio</a>
+            <a href="message us" class="border p-[4px]">Message Us</a>
+           
+         </nav>
+
+    </header>
+    <hr/>
+    <!-- Main Content-->
+    <main>
+        <!--Home-->
+        <section id="home-page" class="min-h-[500px]"></section>
+        <header>
+            <h2 class="text-center text-[24px] font-bold py-[16px]">
+                Welcome <span id="username"></span> Our Website ></h2>
+                <p> We are Amazing! </p>
+        </header>
+        <hr/>
+
+        <!--our profile-->
+        <section id="our-profile" class="min-h-[500px]"></section>
+         <header>
+            <h2 class="text-center text-[24px] font-bold py-[16px]">
+                Profile></h2>
+        </header>
+        <hr/>
+
+        <!--Portofolio-->
+        <section id="portofolio" class="min-h-[500px]"></section>
+         <header>
+            <h2 class="text-center text-[24px] font-bold py-[16px]">
+                Portofolio></h2>
+        </header>
+        <hr/>
+
+        <!--Message us-->
+        <section id="message us" class="min-h-[500px]"></section>
+         <header>
+            <h2 class="text-center text-[24px] font-bold py-[16px]">
+                message us></h2>
+        </header>
+
+        <form class="px-[14px]">
+            <label for="name-input" class="block py-[8px]">
+                Name:
+                <input type="text" id="name-input" class="border p-[4px] w=full" required></label>
+            <button type="button" onclick="validateForm()"class="border p-[4px]mt=[8px]">Send Message</button>
+        </form>
+        <hr/>
+    </main>
+
+    <!-- Footer Content-->
+    <footer></footer>
+ <!-- JS External-->
+  <script src="js/script.js"
+</body>
+</html>
