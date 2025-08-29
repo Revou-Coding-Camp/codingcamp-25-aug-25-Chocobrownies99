@@ -1,81 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- CSS External-->
-     <link rel="stylesheet" href="css/style.css">
-     <!--Tailwind css-->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS External-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Tailwind css-->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <!-- Header Content -->
-    <header class="main-header py-[8px] px-[4px]">
-        <!--Icon-->
-        <div class="logo"></div> 
-        <!-- Navbar-->
-         <nav class="flex gap-4">
-            <a href="#home-page"class="border p-[4px]" >Home</a>
-            <a href="#our-profile"class="border p-[4px]">Our Profile</a>
-            <a href="#portofolio"class="border p-[4px]">Portofolio</a>
-            <a href="#message-us"class="border p-[4px]">Message Us</a>
-         </nav>
+  <!-- Header Content -->
+  <header class="main-header py-[8px] px-[4px]">
+    <!--Icon-->
+    <div class="logo"></div>
+    <!-- Navbar-->
+    <nav class="flex gap-4">
+      <a href="#home-page" class="border p-[4px]">Home</a>
+      <a href="#our-profile" class="border p-[4px]">Our Profile</a>
+      <a href="#portofolio" class="border p-[4px]">Portofolio</a>
+      <a href="#message-us" class="border p-[4px]">Message Us</a>
+    </nav>
+  </header>
+  <hr/>
+
+  <!-- Main Content-->
+  <main>
+    <!-- Home -->
+    <section id="home-page" class="min-h-[250px]"></section>
+    <p class="text-center" style="color:purple;">I'm a Barbie girl in the Barbie world</p>
+    <p class="text-center" style="color:purple;">Life in plastic, it's fantastic!!</p>
+
+    <header>
+      <h2 class="text-center text-[24px] font-bold py-[16px]">
+        Welcome <span id="username"></span> to Our Website
+      </h2>
     </header>
     <hr/>
-    <!-- Main Content-->
-    <main>
-        <!--Home-->
-        <section id="home-page" class="min-h-[250px]"></section>
-         <p class="text-center"style="color:purple;" >Im Barbie girl in the Barbie world </p>
-         <p class="text-center"style="color:purple;" >Life In Plastic Its Fantastic !!</p>
-        <section id="home-page" class="min-h-[250px]"></section>
-        <header>  
-            <h2 class="text-center text-[24px] font-bold py-[16px]">
-                Welcome <span id="username"></span> Our Website ></h2>
 
-        </header>
-        <hr/>
+    <!-- Our profile -->
+    <section id="our-profile" class="min-h-[100px]">
+      <header>
+        <h2 class="text-center text-[24px] font-bold py-[16px]">Profile</h2>
+        <p class="text-3xl pb-2 text-black font-bold ml-6 mt-4 bg-pink-100">Nama Saya Barbie!</p>
+        <img src="https://i5.walmartimages.com/seo/Happy-Birthday-Barbie-Doll_d5b44a18-0997-47ca-87c0-dc032eaa2c0c.7268125968ad468257c4d58d8be1d5cb.jpeg"
+             alt="my self" width="400">
+      </header>
+    </section>
+    <hr/>
 
-        <!--our profile-->
-        <section id="our-profile" class="min-h-[100px]"></section>
-         <header>
-            <h2 class="text-center text-[24px] font-bold py-[16px]">
-                Profile></h2>                 
-                 <p class="text-3xl pb-2 text-black-500 font-bold ml-6 mt-4 bg-pink-100">Nama Saya barbie!</p>
-                 <img src="https://i5.walmartimages.com/seo/Happy-Birthday-Barbie-Doll_d5b44a18-0997-47ca-87c0-dc032eaa2c0c.7268125968ad468257c4d58d8be1d5cb.jpeg" alt="my self"
-                 width="400"
-        </header>
-        <hr/>
+    <!-- Portofolio -->
+    <section id="portofolio" class="min-h-[100px]">
+      <header>
+        <h2 class="text-center text-[24px] font-bold py-[16px]">Portofolio</h2>
+        <img src="https://drawfolio.s3.amazonaws.com/public/system/pictures/images/000/239/728/original/6.jpg?1731069886"
+             alt="portofolio barbie">
+      </header>
+    </section>
+    <hr/>
 
-        <!--Portofolio-->
-        <section id="portofolio" class="min-h-[100px]"></section>
-         <header>
-            <h2 class="text-center text-[24px] font-bold py-[16px]">
-                Portofolio></h2>
-                <img src="https://drawfolio.s3.amazonaws.com/public/system/pictures/images/000/239/728/original/6.jpg?1731069886" alt="portofolio barbie" 
-        </header>
-        <hr/>
+    <!-- Message us -->
+    <section id="message-us" class="min-h-[500px]">
+      <header>
+        <h2 class="text-center text-[24px] font-bold py-[16px]">Message Us</h2>
+      </header>
 
-        <!--Message us-->
-        <section id="message-us" class="min-h-[500px]"></section>
-         <header>
-            <h2 class="text-center text-[24px] font-bold py-[16px]">
-                message us></h2>
-        </header>
+      <form class="px-[14px]">
+        <label for="name-input" class="block py-[8px]">
+          Name:
+          <input type="text" id="name-input" class="border p-[4px] w-full" required>
+        </label>
+        <button type="button" onclick="validateForm()" class="border p-[4px] mt-[8px]">
+          Send Message
+        </button>
+      </form>
+    </section>
+    <hr/>
+  </main>
 
-        <form class="px-[14px]">
-            <label for="name-input" class="block py-[8px]">
-                Name:
-                <input type="text" id="name-input" class="border p-[4px] w-full" required></label>
-            <button type="button" onclick="validateForm()"class="border p-[4px]mt=[8px]">Send Message</button>
-        </form>
-        <hr/>
-    </main>
+  <!-- Footer Content -->
+  <footer></footer>
 
-    <!-- Footer Content-->
-    <footer></footer>
- <!-- JS External-->
-  <script src="js/script.js"
+  <!-- JS External-->
+  <script src="js/script.js"></script>
 </body>
 </html>
