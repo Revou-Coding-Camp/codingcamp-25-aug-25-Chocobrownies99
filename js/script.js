@@ -14,4 +14,8 @@ function validateForm() {
     if (name === "") {
         alert("name must be filled out");
     }
+    else{
+        alert("terimakasih, " + nameInput + " Pesanmu Sudah Terkirim.");
+        document.getElementById("name-input").value= "";
+    }
 }
