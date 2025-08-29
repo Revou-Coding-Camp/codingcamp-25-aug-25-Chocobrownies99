@@ -1,10 +1,11 @@
 console.log("Hello, World!");
 
- greet();
+greet();
+
 /// greet the user
 function greet() {
     let username = prompt("Please Enter Your Name:");
-    alert("Hello,"+username+"!");
+    alert("Hello, " + username + "!");
     document.getElementById('username').innerText = username;
 }
 
@@ -12,10 +13,9 @@ function greet() {
 function validateForm() {
     let name = document.getElementById('name-input').value;
     if (name === "") {
-        alert("name must be filled out");
-    }
-    else{
-        alert("terimakasih, " + nameInput + " Pesanmu Sudah Terkirim.");
-        document.getElementById("name-input").value= "";
+        alert("Name must be filled out");
+    } else {
+        alert("Terimakasih, " + name + " pesanmu sudah terkirim.");
+        document.getElementById("name-input").value = "";
     }
 }
