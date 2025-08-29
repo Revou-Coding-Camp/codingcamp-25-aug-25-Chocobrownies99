@@ -11,49 +11,54 @@
 </head>
 <body>
     <!-- Header Content -->
-    <header class="main-header" py-[8px] px-[4px]>
+    <header class="main-header py-[8px] px-[4px]">
         <!--Icon-->
         <div class="logo"></div> 
         <!-- Navbar-->
-         <nav class="flex">
-            <a href="home-page" class="border p-[4px]">Home</a>
-            <a href="our-profile" class="border p-[4px]">Our Profile</a>
-            <a href="portofolio" class="border p-[4px]">Portofolio</a>
-            <a href="message us" class="border p-[4px]">Message Us</a>
-           
+         <nav class="flex gap-4">
+            <a href="#home-page"class="border p-[4px]" >Home</a>
+            <a href="#our-profile"class="border p-[4px]">Our Profile</a>
+            <a href="#portofolio"class="border p-[4px]">Portofolio</a>
+            <a href="#message-us"class="border p-[4px]">Message Us</a>
          </nav>
-
     </header>
     <hr/>
     <!-- Main Content-->
     <main>
         <!--Home-->
-        <section id="home-page" class="min-h-[500px]"></section>
-        <header>
+        <section id="home-page" class="min-h-[250px]"></section>
+         <p class="text-center"style="color:purple;" >Im Barbie girl in the Barbie world </p>
+         <p class="text-center"style="color:purple;" >Life In Plastic Its Fantastic !!</p>
+        <section id="home-page" class="min-h-[250px]"></section>
+        <header>  
             <h2 class="text-center text-[24px] font-bold py-[16px]">
                 Welcome <span id="username"></span> Our Website ></h2>
-                <p> We are Amazing! </p>
+
         </header>
         <hr/>
 
         <!--our profile-->
-        <section id="our-profile" class="min-h-[500px]"></section>
+        <section id="our-profile" class="min-h-[100px]"></section>
          <header>
             <h2 class="text-center text-[24px] font-bold py-[16px]">
-                Profile></h2>
+                Profile></h2>                 
+                 <p class="text-3xl pb-2 text-black-500 font-bold ml-6 mt-4 bg-pink-100">Nama Saya barbie!</p>
+                 <img src="https://i5.walmartimages.com/seo/Happy-Birthday-Barbie-Doll_d5b44a18-0997-47ca-87c0-dc032eaa2c0c.7268125968ad468257c4d58d8be1d5cb.jpeg" alt="my self"
+                 width="400"
         </header>
         <hr/>
 
         <!--Portofolio-->
-        <section id="portofolio" class="min-h-[500px]"></section>
+        <section id="portofolio" class="min-h-[100px]"></section>
          <header>
             <h2 class="text-center text-[24px] font-bold py-[16px]">
                 Portofolio></h2>
+                <img src="https://drawfolio.s3.amazonaws.com/public/system/pictures/images/000/239/728/original/6.jpg?1731069886" alt="portofolio barbie" 
         </header>
         <hr/>
 
         <!--Message us-->
-        <section id="message us" class="min-h-[500px]"></section>
+        <section id="message-us" class="min-h-[500px]"></section>
          <header>
             <h2 class="text-center text-[24px] font-bold py-[16px]">
                 message us></h2>
@@ -62,7 +67,7 @@
         <form class="px-[14px]">
             <label for="name-input" class="block py-[8px]">
                 Name:
-                <input type="text" id="name-input" class="border p-[4px] w=full" required></label>
+                <input type="text" id="name-input" class="border p-[4px] w-full" required></label>
             <button type="button" onclick="validateForm()"class="border p-[4px]mt=[8px]">Send Message</button>
         </form>
         <hr/>
