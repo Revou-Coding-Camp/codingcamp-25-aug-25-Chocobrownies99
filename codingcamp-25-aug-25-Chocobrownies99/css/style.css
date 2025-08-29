@@ -1,0 +1,14 @@
+.logo{
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+    background-image: url(https://images.seeklogo.com/logo-png/20/1/barbie-logo-png_seeklogo-202717.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
